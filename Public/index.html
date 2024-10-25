@@ -1,25 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energia </title>
-    <link rel="stylesheet" href="./Styles/global.css">
-    <link rel="shortcut icon" href="./Images/Icon.png" type="image/x-icon">
-</head>
-<body>
-    <nav class="navbar">
-        <!-- LOGO -->
-        <img src="./Images/Logo.png" alt="Logo"> 
-        <a href="">Sobre nós</a>
-    </nav>
-    <section class="main_section">
-        <div class="tittle">
-            <h1>Energias Renováveis</h1>
-            <!-- <img src="./Images/eolica.avif" alt=""> -->
-            <!-- Fazer o background image com slides de fotos, com opções no estilo bolinha para passar a imagem -->
-        </div>
-        <p>Uma empresa que se preocupa com o meio ambiente e com a sua economia</p>
-    </section>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Energias e Engenharia</title>
+        <!-- font-awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <!-- styles -->
+        <link rel="stylesheet" href="./Styles/global.css">
+        <link rel="shortcut icon" href="./Images/Icon.png" type="image/x-icon">
+    </head>
+    <body>
+        <!-- header -->
+        <header id="home">
+            <!-- navbar -->
+            <nav id="nav">
+                <div class="nav-center">
+                    <!-- nav header -->
+                    <div class="nav-header">
+                        <img src="./Images/Logo.png" alt="logo" class="logo">
+                        <button class="nav-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- links -->
+                    <div class="links-container">
+                        <ul class="links">
+                            <li><a href="#home" class="scroll-link">Home</a></li>
+                            <li><a href="#energias" class="scroll-link">Energias</a></li>
+                            <li><a href="#engenharia" class="scroll-link">Engenharia</a></li>
+                            <li><a href="#sobre" class="scroll-link">Sobre Nós</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- banner -->
+            <div class="banner">
+                <div class="container">
+                    <h1>Energias Renováveis</h1>
+                    <p>O que são energias renováveis? Como a engenharia mecânica se relaciona com elas?</p>
+                    <a href="#energias" class="scroll-link btn btn-white">Saiba Mais</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- energias -->
+        <section id="energias" class="section">
+            <div class="tittle about-center section-center">
+                <h2>energias <span>renováveis</span></h2>
+                <p>Energias renováveis são fontes de energia que se regeneram naturalmente e não se esgotam. Exemplos de energias renováveis são:</p>
+                <div class="about-img">
+                    <li>Energia hídrica: Gerada pela água dos rios</li>
+                    <img src="./Images/hidreletrica.jpeg" alt="">
+                </div>
+                <div class="about-img">
+                    <li>Energia solar: Gerada pelo sol</li>
+                    <img src="./Images/paineis.avif" alt="">
+                </div>
+                <div class="about-img">
+                    <li>Energia eólica: Gerada pelo vento</li>
+                    <img src="./Images/eolica.avif" alt="">
+                </div>
+                    <li>Energia da biomassa: Gerada a partir da transformação de matéria orgânica, como produtos de origem animal e vegetal</li>
+                    <li>Energia geotérmica: Gerada a partir do calor do interior da Terra</li>
+                    <li>Energia oceânica: Gerada a partir da energia das marés e das ondas </li>
+            </div>
+        </section>
+
+        <!-- engenharia -->
+        <section id="engenharia" class="section">
+            <div class="tittle">
+                <h2>engenharia <span>mecânica</span></h2>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="sobre" class="section">
+            <div class="tittle">
+                <h2>sobre <span>nós</span></h2>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="section">
+            <p>Copyright &copy; Grupo 4, Engenharia Mecânica - UFF
+                <span id="date">
+                    2024.
+                </span>
+                All rights reserved
+            </p>
+        </footer>
+
+        <!-- back to top -->
+        <a href="#home" class="scroll-link top-link">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <script src="../src/app.js"></script>
+    </body>
 </html>
