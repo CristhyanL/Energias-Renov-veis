@@ -88,6 +88,10 @@ margin-bottom: 1.25rem;
 color: black;
 }
 
+.tittle{
+  color: #92ca3c;
+}
+
 @media screen and (min-width: 800px) {
 h1 {
   font-size: 4rem;
@@ -144,18 +148,18 @@ color: #92ca3c;
 /* section */
 .section1 {
 max-height:fit-content;
-background-color: #92ca3c;
+/* background-color: #92ca3c; */
 margin-left: 0%;
 }
 
 .section2 {
   max-height:fit-content;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .section3 {
   max-height:fit-content;
-  background-color:#49a6e9;
+  /* background-color:#49a6e9; */
 }
 
 main {
@@ -200,16 +204,13 @@ background-color:#49a6e9;
 z-index: 10;
 }
 
-.fixed-nav .links a {
-color: white;
-}
-
-.fixed-nav .links a:hover {
-color: #92ca3c;
-}
-
 .fixed-nav .links-container {
 height: auto !important;
+}
+
+.nav-header{
+  /* background-color: white; */
+  color: #23aae6;
 }
 
 .nav-header {
@@ -221,7 +222,7 @@ z-index: 1;
 
 .nav-toggle {
 font-size: 1.5rem;
-color: var(--clr-grey-1);
+color: green;
 background: transparent;
 border-color: transparent;
 transition: var(--transition);
@@ -230,7 +231,7 @@ z-index: 1;
 }
 
 .nav-toggle:hover {
-color: var(--clr-secondary);
+color: green;
 }
 
 .logo {
@@ -439,6 +440,8 @@ font-weight: bolder;
 margin-bottom: 5px;
 }
 
+/* Energies */
+
 .energy-content{
 display: flex;
 flex-direction: row;
@@ -468,4 +471,39 @@ margin-bottom: 10px;
 .energy p{
 text-align: center;
 margin: 2px;
+}
+
+.hidrica{
+display: flex;
+align-items: center;
+}
+
+/* .solar{
+  display: flex;
+}
+
+.solar h3{
+  color:aqua;
+}
+
+.solar p{
+display: flex;
+align-items: end;
+} */
+
+.eolica{
+  display: flex;
+}
+
+.biomassa{
+  display: flex;
+}
+
+.geotermica{
+  display: flex;
+}
+
+.oceanica{
+  display: flex;
+
 }
