@@ -147,26 +147,37 @@ color: #92ca3c;
 
 /* section */
 .section1 {
-max-height:fit-content;
-/* background-color: #92ca3c; */
+max-height: fit-content;
+/* background-color: #4b6525; */
 margin-left: 0%;
+margin-right: 0%;
+margin-top: 0%;
+margin-bottom: 10%;
+gap: 10px;
+padding-bottom: 1625px; /* Added padding to prevent text overflow */
 }
 
 .section2 {
+  padding-top: 0px;
   max-height:fit-content;
   /* background-color: aqua; */
 }
 
-.section3 {
+.section3{
+  max-height:fit-content;
+  /* background-color:#e66123; */
+}
+
+.section4 {
   max-height:fit-content;
   /* background-color:#49a6e9; */
 }
 
-main {
+/* main {
 min-height: 100vh;
 display: grid;
 place-items: center;
-}
+} */
 
 /*
 =============== 
@@ -216,7 +227,7 @@ height: auto !important;
 .nav-header {
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content:center;
 z-index: 1;
 }
 
@@ -329,12 +340,11 @@ margin-bottom: 1.25rem;
 }
 
 /* sections and title */
-.title h2 {
-text-align: center;
+.tittle h2 {
 text-transform: uppercase;
 }
 
-.title span {
+.tittle span {
 color: var(--clr-secondary);
 }
 
@@ -349,6 +359,11 @@ margin: 15px;
 }
 
 #engenharia {
+height: 200vh;
+margin: 15px;
+}
+
+#depoimentos {
 height: 200vh;
 margin: 15px;
 }
@@ -442,68 +457,167 @@ margin-bottom: 5px;
 
 /* Energies */
 
-.energy-content{
-display: flex;
-flex-direction: row;
-margin: 2rem 0;
-justify-content: space-between;
-align-self: center;
-align-items:baseline;
+.energy-content1 {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0; /* Reduced margin */
+  justify-content: space-between;
+  align-self: center;
+  align-items: center; /* Changed to center */
 }
 
-.energy{
-display: flex;
-margin: 25px;
-width: 200px;
-flex-direction: column;
-align-items: center;
-flex: 16.66%;
-padding: 5px;
+.energy-content2 {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0; /* Reduced margin */
+  justify-content: space-between;
+  align-self: center;
+  align-items: center; /* Changed to center */
+  padding-top: 0px;
 }
 
-.energy img{
-border-radius: 10px;
-width: 150px;
-height: 150px;
-margin-bottom: 10px;
+.energy {
+  display: flex;
+  margin: 25px;
+  width: 200px;
+  flex-direction: column;
+  align-items: center;
+  flex: 16.66%;
+  padding: 5px;
 }
 
-.energy p{
-text-align: center;
-margin: 2px;
+.energy-img {
+  border-radius: 10px;
+  width: 70%;
+  height: 70%;
+  margin-bottom: 10px;
 }
 
-.hidrica{
-display: flex;
-align-items: center;
+.energy p {
+  text-align: center;
+  margin: 2px;
 }
 
-/* .solar{
+.energy h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hidrica {
   display: flex;
 }
 
-.solar h3{
-  color:aqua;
+.hidrica p {
+  text-align: justify;
 }
 
-.solar p{
-display: flex;
-align-items: end;
-} */
-
-.eolica{
+.solar {
   display: flex;
 }
 
-.biomassa{
+.solar p {
+  text-align: justify;
+}
+
+.eolica {
   display: flex;
 }
 
-.geotermica{
+.eolica p {
+  text-align: justify;
+}
+
+.biomassa {
   display: flex;
 }
 
-.oceanica{
-  display: flex;
+.biomassa p {
+  text-align: justify;
+}
 
+.geotermica {
+  display: flex;
+}
+
+.geotermica p {
+  text-align: justify;
+}
+
+.oceanica {
+  display: flex;
+}
+
+.oceanica p {
+  text-align: justify;
+}
+
+.logos{
+  max-width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.EE{
+  display: flex;
+  max-width: 70%;
+}
+
+.depoimento{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  padding: 5px;
+}
+
+/* Depoimento */
+button.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+  background-color: #ddd;
+}
+
+div.panel {
+  padding: 0 18px;
+  display: none;
+}
+
+div.panel.show {
+  display: block;
+}
+
+div.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+}
+
+div.panel.show {
+  opacity: 1;
+  max-height: 500px;
+}
+
+button.accordion:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+button.accordion.active:after {
+  content: "\2796";
 }
